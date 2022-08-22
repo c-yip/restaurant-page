@@ -76,6 +76,12 @@ export function createHome() {
     col4.appendChild(img2);
 }
 
+import { createNavBar } from "./nav.js";
+export function createHomePage {
+    createHome();
+    createNavBar();
+}
+
 /* <div class="container-fluid text-center bg-dark text-light" id="title-container">
         <h1 class="display-1" id="title">Charlotte's Dumplings</h1>
     </div>
