@@ -77,9 +77,9 @@ export function createHome() {
 }
 
 import { createNavBar } from "./nav.js";
-export function createHomePage {
-    createHome();
+export function createHomePage() {
     createNavBar();
+    createHome();
 }
 
 /* <div class="container-fluid text-center bg-dark text-light" id="title-container">
