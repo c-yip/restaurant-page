@@ -53,6 +53,7 @@ export function createNavBar() {
     const a3 = document.createElement('a');
     a3.classList.add('nav-link', 'active');
     a3.setAttribute('href', '#')
+    a3.setAttribute('id', 'menu');
     li2.appendChild(a3);
     a3.textContent = 'MENU';
 
