@@ -1,0 +1,13 @@
+#title-container {
+    padding: 100px;
+}
+
+#title {
+    font-family: 'Permanent Marker', cursive;
+    border: solid white;
+    padding: 10px
+}
+#dumplings-plate {
+    width: 100%;
+    height: auto;
+}
