@@ -1,5 +1,8 @@
 console.log('Test to see if if everything is working!')
 import { createHomePage } from "./home.js";
+import { createMenu } from "./menu.js";
+
 createHomePage();
-import { menuBtnActive } from "./menu.js";
-menuBtnActive;
+
+const menuBtn = document.querySelector('#menu');
+menuBtn.addEventListener('click', createMenu);

@@ -1,14 +1,9 @@
-const content = document.querySelector('.content');
-const menuBtn = document.querySelector('#menu');
 
-export const menuBtnActive = menuBtn.addEventListener('click', function() {
+export const createMenu = function() {
+    const content = document.querySelector('.content');
     removeAllChildNodes(content);
-    // createMenu();
-})
-
-// function createMenu() {
-    
-// }
+    console.log('menu test');
+}
 
 
 
