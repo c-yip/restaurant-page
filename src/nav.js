@@ -64,6 +64,7 @@ export function createNavBar() {
     const a5 = document.createElement('a');
     a5.classList.add('nav-link', 'active');
     a5.setAttribute('href', '#');
+    a5.setAttribute('id', 'contact');
     li4.appendChild(a5);
     a5.textContent = 'CONTACT US';
 }

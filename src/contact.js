@@ -1,6 +1,10 @@
+import {removeAllChildNodes} from "./menu.js";
 
-
-
+export const replaceWithContact = function() {
+    const content = document.querySelector('.content');
+    removeAllChildNodes(content);
+    console.log('contact test');
+}
 
 
 

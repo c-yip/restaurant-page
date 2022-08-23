@@ -6,7 +6,7 @@ export const replaceWithMenu = function() {
   console.log('menu test');
 }
 
-function removeAllChildNodes(parent) {
+export function removeAllChildNodes(parent) {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
   }
