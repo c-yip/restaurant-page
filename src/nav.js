@@ -57,16 +57,6 @@ export function createNavBar() {
     li2.appendChild(a3);
     a3.textContent = 'MENU';
 
-    const li3 = document.createElement('li');
-    li3.classList.add('nav-item');
-    ul.appendChild(li3);
-
-    const a4 = document.createElement('a');
-    a4.classList.add('nav-link', 'active');
-    a4.setAttribute('href', '#')
-    li3.appendChild(a4);
-    a4.textContent = 'HOURS & LOCATION';
-
     const li4 = document.createElement('li');
     li4.classList.add('nav-item');
     ul.appendChild(li4);
