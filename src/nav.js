@@ -17,7 +17,7 @@ export function createNavBar() {
     div1.appendChild(a1);
 
     const img1 = document.createElement('img');
-    img1.setAttribute('src', '/img/dumpling.png');
+    img1.setAttribute('src', '../img/dumpling.png');
     img1.setAttribute('width', '30');
     img1.setAttribute('height', '30');
     img1.classList.add('d-inline-block', 'align-text-top');
