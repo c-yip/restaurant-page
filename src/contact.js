@@ -37,9 +37,67 @@ const createContact = function() {
     const row = document.createElement('div');
     row.classList.add('row');
     contentContainer.appendChild(row);
+
+    const listColumn = document.createElement('div');
+    listColumn.classList.add('col', 'd-flex', 'justify-content-center', 'align-items-center');
+    row.appendChild(listColumn);
+
+    const ul = document.createElement('ul');
+    ul.classList.add('list-group', 'list-group-flush', 'gap-3');
+    listColumn.appendChild(ul);
+
+    ul.appendChild(createListItem('123 Fake St., Los Angeles, CA 90012'));
+    ul.appendChild(createListItem('Monday - Friday: 10:00am - 8:00pm'));
+    ul.appendChild(createListItem('Saturday - Sunday: 11:00am - 9:00pm'));
+    ul.appendChild(createListItem('(213) 321-5862'));
+
+    const formColumn = document.createElement('div');
+    formColumn.classList.add('col');
+    row.appendChild(formColumn);
+
+    const form = document.createElement('form');
+    form.classList.add('d-flex', 'justify-content-center', 'flex-column', 'gap-1');
+    formColumn.appendChild(form);
+
+    form.appendChild(createLabel('inputName', 'Name'));
+    form.appendChild(createInput('text'));
+    form.appendChild(createLabel('inputEmail', 'Email'));
+    form.appendChild(createInput('email'));
+    form.appendChild(createLabel('inputMessage', 'Message'));
+
+    const textArea = document.createElement('textarea');
+    textArea.classList.add('form-control');
+    textArea.setAttribute('type', 'text');
+    form.appendChild(textArea);
+
+    const button = document.createElement('button');
+    button.classList.add('btn', 'btn-primary');
+    button.setAttribute('type', 'submit');
+    button.textContent = 'Submit';
+    form.appendChild(button);
 }
 
+function createListItem(text) {
+    const li = document.createElement('li');
+    li.classList.add('list-group-item', 'rounded', 'h5');
+    li.textContent = text;
+    return li;
+}
 
+function createLabel(name, text) {
+    const label = document.createElement('label');
+    label.classList.add('form-label', 'h5');
+    label.setAttribute('for', name);
+    label.textContent = text;
+    return label;
+}
+
+function createInput(type) {
+    const input = document.createElement('input');
+    input.classList.add('form-control');
+    input.setAttribute('type', type);
+    return input;
+}
 
 {/* <div class="container-flex bg-dark text-light">
     <div class="p-5 row text-center">
