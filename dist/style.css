@@ -1,5 +1,5 @@
 #title-container {
-    padding: 100px;
+    padding: min(100px, 5%);
 }
 
 #title {
