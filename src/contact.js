@@ -1,8 +1,10 @@
 import {removeAllChildNodes} from "./menu.js";
+import { createNavBar } from "./nav.js";
 
 export const replaceWithContact = function() {
     const content = document.querySelector('.content');
     removeAllChildNodes(content);
+    createNavBar();
     createContact();
     console.log('contact test');
 }

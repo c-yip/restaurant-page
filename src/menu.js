@@ -1,7 +1,9 @@
+import { createNavBar } from "./nav.js";
 
 export const replaceWithMenu = function() {
   const content = document.querySelector('.content');
   removeAllChildNodes(content);
+  createNavBar();
   createMenu();
   console.log('menu test');
 }
