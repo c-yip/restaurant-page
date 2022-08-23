@@ -18,10 +18,3 @@ export function footer() {
     img.setAttribute('alt', 'GitHub Icon');
     link.appendChild(img);
 }
-
-{/* <div class="container-flex bg-dark text-light d-flex justify-content-center align-items-center gap-3 p-5">
-      <p class="m-0">Created by Christian Yip</p>
-      <a href="https://github.com/c-yip">
-        <img src="/img/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="">
-      </a>
-</div> */}
