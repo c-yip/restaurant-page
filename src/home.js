@@ -77,9 +77,11 @@ export function createHome() {
 }
 
 import { createNavBar } from "./nav.js";
+import { footer } from "./footer.js";
 export function createHomePage() {
     createNavBar();
     createHome();
+    footer();
 }
 import { removeAllChildNodes } from "./menu.js";
 export function replaceWithHome() {
