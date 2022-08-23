@@ -1,5 +1,6 @@
 import { replaceWithMenu } from "./menu.js";
 import {replaceWithContact} from "./contact.js";
+import { replaceWithHome } from "./home.js";
 export function createNavBar() {
     const content = document.querySelector('.content');
     const nav = document.createElement('nav');
@@ -44,7 +45,8 @@ export function createNavBar() {
 
     const a2 = document.createElement('a');
     a2.classList.add('nav-link', 'active');
-    a2.setAttribute('href', '#')
+    a2.setAttribute('href', '#');
+    a2.setAttribute('id', 'home');
     li1.appendChild(a2);
     a2.textContent = 'HOME';
 
@@ -75,6 +77,9 @@ export function createNavBar() {
 
     const contact = document.querySelector('#contact');
     contact.addEventListener('click', replaceWithContact);
+
+    const homeBtn = document.querySelector('#home');
+    homeBtn.addEventListener('click', replaceWithHome);
 }
 
 /* <nav class="navbar navbar-expand-lg bg-dark navbar-dark">

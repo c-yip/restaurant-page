@@ -81,6 +81,13 @@ export function createHomePage() {
     createNavBar();
     createHome();
 }
+import { removeAllChildNodes } from "./menu.js";
+export function replaceWithHome() {
+    const content = document.querySelector('.content');
+    removeAllChildNodes(content);
+    createNavBar();
+    createHome();
+}
 
 /* <div class="container-fluid text-center bg-dark text-light" id="title-container">
         <h1 class="display-1" id="title">Charlotte's Dumplings</h1>
