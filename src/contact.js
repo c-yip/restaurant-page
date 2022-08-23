@@ -29,6 +29,14 @@ const createContact = function() {
     title.setAttribute('id', 'title')
     title.textContent = 'Contact Us'
     titleCol.appendChild(title);
+
+    const contentContainer = document.createElement('div');
+    contentContainer.classList.add('container', 'bg-secondary', 'p-5', 'rounded');
+    container.appendChild(contentContainer);
+
+    const row = document.createElement('div');
+    row.classList.add('row');
+    contentContainer.appendChild(row);
 }
 
 
