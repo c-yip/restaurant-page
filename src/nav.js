@@ -1,3 +1,5 @@
+import { replaceWithMenu } from "./menu.js";
+import {replaceWithContact} from "./contact.js";
 export function createNavBar() {
     const content = document.querySelector('.content');
     const nav = document.createElement('nav');
@@ -67,6 +69,12 @@ export function createNavBar() {
     a5.setAttribute('id', 'contact');
     li4.appendChild(a5);
     a5.textContent = 'CONTACT US';
+
+    const menuBtn = document.querySelector('#menu');
+    menuBtn.addEventListener('click', replaceWithMenu);
+
+    const contact = document.querySelector('#contact');
+    contact.addEventListener('click', replaceWithContact);
 }
 
 /* <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
