@@ -26,7 +26,7 @@ function createMenu() {
 
   const menuTitle = document.createElement('h1');
   menuTitle.classList.add('display-1');
-  menu.setAttribute('id', 'title');
+  menuTitle.setAttribute('id', 'title');
   menuTitle.textContent = 'Menu';
   menu.appendChild(menuTitle);
 
