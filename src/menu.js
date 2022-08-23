@@ -26,10 +26,12 @@ function createMenu() {
   menuTitle.textContent = 'Menu';
   menu.appendChild(menuTitle);
 
-  content.appendChild(menuItem('Appetizers'));
+  content.appendChild(menuItem('Appetizers', '/img/pexels-bich-tran-840216.jpg', 'fried spring rolls', 'Fried Spring Rolls',
+  '/img/seaweed-salad.jpg', 'seaweed-salad', 'Seaweed Salad', 
+  '/img/pexels-makafood-8982387.jpg', 'seafood miso soup', 'Seafood Miso Soup'));
 }
 
-function menuItem(headingName) {
+function menuItem(headingName, src, alt, text, src2, alt2, text2, src3, alt3, text3) {
   const menuItemContainer = document.createElement('div');
   menuItemContainer.classList.add('container-fluid', 'bg-dark');
 
@@ -46,7 +48,14 @@ function menuItem(headingName) {
   col1.classList.add('col-8');
   row.appendChild(col1);
 
-  col1.appendChild(createCard('/img/pexels-bich-tran-840216.jpg', 'fried spring rolls', 'Fried Spring Rolls'));
+  col1.appendChild(createCard(src, alt, text));
+
+  const col2 = document.createElement('div');
+  col2.classList.add('col-4');
+  row.appendChild(col2); 
+
+  col2.appendChild(createCard(src2, alt2, text2));
+  col2.appendChild(createCard(src3, alt3, text3));
   
   return menuItemContainer;
 }
@@ -62,8 +71,8 @@ function createCard(src, alt, text) {
   card.appendChild(cardImg);
 
   const cardText = document.createElement('h2');
-  cardImg.classList.add('card-title');
-  cardImg.textContent = text;
+  cardText.classList.add('card-title');
+  cardText.textContent = text;
   card.appendChild(cardText);
 
   return card;
