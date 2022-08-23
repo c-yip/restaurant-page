@@ -1,11 +1,14 @@
 import {removeAllChildNodes} from "./menu.js";
 import { createNavBar } from "./nav.js";
+import { footer } from "./footer.js";
+
 
 export const replaceWithContact = function() {
     const content = document.querySelector('.content');
     removeAllChildNodes(content);
     createNavBar();
     createContact();
+    footer();
     console.log('contact test');
 }
 

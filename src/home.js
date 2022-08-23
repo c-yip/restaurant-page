@@ -89,6 +89,7 @@ export function replaceWithHome() {
     removeAllChildNodes(content);
     createNavBar();
     createHome();
+    footer();
 }
 
 /* <div class="container-fluid text-center bg-dark text-light" id="title-container">

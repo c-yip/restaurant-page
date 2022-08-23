@@ -1,10 +1,12 @@
 import { createNavBar } from "./nav.js";
+import { footer } from "./footer.js";
 
 export const replaceWithMenu = function() {
   const content = document.querySelector('.content');
   removeAllChildNodes(content);
   createNavBar();
   createMenu();
+  footer();
   console.log('menu test');
 }
 
