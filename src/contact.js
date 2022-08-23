@@ -3,10 +3,31 @@ import {removeAllChildNodes} from "./menu.js";
 export const replaceWithContact = function() {
     const content = document.querySelector('.content');
     removeAllChildNodes(content);
+    createContact();
     console.log('contact test');
 }
 
+const createContact = function() {
+    const content = document.querySelector('.content');
 
+    const container = document.createElement('div');
+    container.classList.add('container-flex', 'bg-dark', 'text-light')
+    content.appendChild(container);
+
+    const titleContainer = document.createElement('div');
+    titleContainer.classList.add('p-5', 'row', 'text-center');
+    container.appendChild(titleContainer);
+
+    const titleCol = document.createElement('div');
+    titleCol.classList.add('col');
+    titleContainer.appendChild(titleCol);
+
+    const title = document.createElement('h1');
+    title.classList.add('display-1');
+    title.setAttribute('id', 'title')
+    title.textContent = 'Contact Us'
+    titleCol.appendChild(title);
+}
 
 
 
