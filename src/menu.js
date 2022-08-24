@@ -30,17 +30,17 @@ function createMenu() {
   menuTitle.textContent = 'Menu';
   menu.appendChild(menuTitle);
 
-  content.appendChild(menuItem('Appetizers', '../img/pexels-bich-tran-840216.jpg', 'fried spring rolls', 'Fried Spring Rolls',
-  '../img/seaweed-salad.jpg', 'seaweed-salad', 'Seaweed Salad', 
-  '../img/pexels-makafood-8982387.jpg', 'seafood miso soup', 'Seafood Miso Soup'));
+  content.appendChild(menuItem('Appetizers', './img/pexels-bich-tran-840216.jpg', 'fried spring rolls', 'Fried Spring Rolls',
+  './img/seaweed-salad.jpg', 'seaweed-salad', 'Seaweed Salad', 
+  './img/pexels-makafood-8982387.jpg', 'seafood miso soup', 'Seafood Miso Soup'));
 
-  content.appendChild(menuItem('Main Course', '../img/soup-dumpling.jpg', 'soup dumplings', 'Xiao Long Bao (Soup Dumplings)',
-  '../img/pexels-anna-tarazevich-7287723.jpg', 'fried dumplings', 'Fried Dumplings', 
-  '../img/spicy-wanton.jpg', 'spicy wantons', 'Spicy Wantons'));
+  content.appendChild(menuItem('Main Course', './img/soup-dumpling.jpg', 'soup dumplings', 'Xiao Long Bao (Soup Dumplings)',
+  './img/pexels-anna-tarazevich-7287723.jpg', 'fried dumplings', 'Fried Dumplings', 
+  './img/spicy-wanton.jpg', 'spicy wantons', 'Spicy Wantons'));
 
-  content.appendChild(menuItem('Desserts', '../img/red-bean-bun.jpg', 'red bean buns', 'Red Bean Bun',
-  '../img/taro-bun.jpg', 'taro buns', 'Taro Bun', 
-  '../img/sesame-bun.jpg', 'sesame buns', 'Sesame Bun'));
+  content.appendChild(menuItem('Desserts', './img/red-bean-bun.jpg', 'red bean buns', 'Red Bean Bun',
+  './img/taro-bun.jpg', 'taro buns', 'Taro Bun', 
+  './img/sesame-bun.jpg', 'sesame buns', 'Sesame Bun'));
 }
 
 function menuItem(headingName, src, alt, text, src2, alt2, text2, src3, alt3, text3) {

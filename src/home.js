@@ -25,7 +25,7 @@ export function createHome() {
 
     const img1 = document.createElement('img');
     img1.classList.add('img-fluid', 'rounded')
-    img1.setAttribute('src', '../img/pexels-shotpot-7705671.jpg');
+    img1.setAttribute('src', './img/pexels-shotpot-7705671.jpg');
     img1.setAttribute('alt', 'dumplings on plate');
     col1.appendChild(img1);
 
@@ -71,7 +71,7 @@ export function createHome() {
 
     const img2 = document.createElement('img');
     img2.classList.add('img-fluid', 'rounded')
-    img2.setAttribute('src', '../img/pexels-rodnae-productions-6646233.jpg');
+    img2.setAttribute('src', './img/pexels-rodnae-productions-6646233.jpg');
     img2.setAttribute('alt', 'dumplings being picked up');
     col4.appendChild(img2);
 }

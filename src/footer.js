@@ -14,7 +14,7 @@ export function footer() {
     container.appendChild(link);
 
     const img = document.createElement('img');
-    img.setAttribute('src', '../img/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png');
+    img.setAttribute('src', './img/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png');
     img.setAttribute('alt', 'GitHub Icon');
     link.appendChild(img);
 }
